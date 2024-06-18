@@ -1,0 +1,137 @@
+GetLastActivePopup,windowing,-,USER32.dll
+GetGUIThreadInfo,windowing,-,USER32.dll
+IsWindow,windowing,-,USER32.dll
+InSendMessage,windowing,-,USER32.dll
+FindWindowW,windowing,T1055 | Process Injection,USER32.dll
+DefWindowProcA,windowing,-,USER32.dll
+IsWindowVisible,windowing,-,USER32.dll
+CreateWindowExW,windowing,-,USER32.dll
+GetCapture,windowing,-,USER32.dll
+ShowWindow,windowing,-,USER32.dll
+RegisterWindowMessageA,windowing,-,USER32.dll
+DispatchMessageW,windowing,-,USER32.dll
+PulseEvent,synchronization,-,KERNEL32.dll
+GetSecurityDescriptorDacl,security,-,ADVAPI32.dll
+GetSidSubAuthorityCount,security,-,ADVAPI32.dll
+GetKernelObjectSecurity,security,-,ADVAPI32.dll
+GetSidSubAuthority,security,-,ADVAPI32.dll
+LookupPrivilegeValueA,security,T1134 | Access Token Manipulation,ADVAPI32.dll
+GetSidIdentifierAuthority,security,-,ADVAPI32.dll
+OpenThreadToken,security,T1134 | Access Token Manipulation,ADVAPI32.dll
+LsaQueryInformationPolicy,security,T1087 | Account Discovery,ADVAPI32.dll
+MakeAbsoluteSD,security,-,ADVAPI32.dll
+AddAce,security,-,ADVAPI32.dll
+SetNamedSecurityInfoW,security,T1134 | Access Token Manipulation,ADVAPI32.dll
+SetSecurityDescriptorSacl,security,T1134 | Access Token Manipulation,ADVAPI32.dll
+MakeSelfRelativeSD,security,-,ADVAPI32.dll
+InitializeSecurityDescriptor,security,T1134 | Access Token Manipulation,ADVAPI32.dll
+InitializeAcl,security,T1134 | Access Token Manipulation,ADVAPI32.dll
+SetEntriesInAclA,security,T1134 | Access Token Manipulation,ADVAPI32.dll
+GetSidLengthRequired,security,-,ADVAPI32.dll
+SetEntriesInAclW,security,T1134 | Access Token Manipulation,ADVAPI32.dll
+GetAclInformation,security,-,ADVAPI32.dll
+LoadCursorA,resource,-,USER32.dll
+LoadCursorFromFileW,resource,-,USER32.dll
+RegQueryInfoKeyA,registry,T1012 | Query Registry,ADVAPI32.dll
+RegSetValueExA,registry,T1112 | Modify Registry,ADVAPI32.dll
+RegDeleteKeyA,registry,T1485 | Data Destruction,ADVAPI32.dll
+RegCloseKey,registry,-,ADVAPI32.dll
+RegQueryValueA,registry,T1012 | Query Registry,ADVAPI32.dll
+RegLoadKeyA,registry,-,ADVAPI32.dll
+RegConnectRegistryA,registry,-,ADVAPI32.dll
+RegQueryValueW,registry,T1012 | Query Registry,ADVAPI32.dll
+RegSetValueW,registry,T1112 | Modify Registry,ADVAPI32.dll
+RegOpenKeyExA,registry,-,ADVAPI32.dll
+RegCreateKeyExW,registry,T1112 | Modify Registry,ADVAPI32.dll
+RegFlushKey,registry,T1112 | Modify Registry,ADVAPI32.dll
+RegSetValueA,registry,T1112 | Modify Registry,ADVAPI32.dll
+GetUserNameW,reconnaissance,T1033 | System Owner/User Discovery,ADVAPI32.dll
+GetKeyboardLayout,input-output,T1056 | Input Capture,USER32.dll
+mouse_event,input-output,-,USER32.dll
+NotifyWinEvent,hooking,-,USER32.dll
+WriteFileGather,file,-,KERNEL32.dll
+CreateProcessAsUserA,execution,T1106 | Execution through API,ADVAPI32.dll
+PostThreadMessageW,execution,-,USER32.dll
+GetWindowModuleFileNameA,execution,-,USER32.dll
+GetWindowThreadProcessId,execution,T1057 | Process Discovery,USER32.dll
+RegisterEventSourceA,diagnostic,-,ADVAPI32.dll
+OpenEventLogW,diagnostic,-,ADVAPI32.dll
+CreateDesktopW,desktop,T1021 | Remote Services,USER32.dll
+GetProcessWindowStation,desktop,-,USER32.dll
+ChangeDisplaySettingsW,desktop,-,USER32.dll
+GetCursorPos,desktop,-,USER32.dll
+OpenClipboard,data-exchange,T1115 | Clipboard Data,USER32.dll
+ReuseDDElParam,data-exchange,-,USER32.dll
+SetClipboardData,data-exchange,T1115 | Clipboard Data,USER32.dll
+CloseClipboard,data-exchange,T1115 | Clipboard Data,USER32.dll
+DdeDisconnect,data-exchange,-,USER32.dll
+GetClipboardFormatNameW,data-exchange,T1115 | Clipboard Data,USER32.dll
+DdeAccessData,data-exchange,-,USER32.dll
+EncryptFileW,crypto | obfuscation,T1027 | Obfuscated Files or Information,ADVAPI32.dll
+InitiateSystemShutdownA,administration,-,ADVAPI32.dll
+DrawIconEx,-,-,USER32.dll
+IsDialogMessageA,-,-,USER32.dll
+OffsetRect,-,-,USER32.dll
+DialogBoxParamA,-,-,USER32.dll
+DrawStateA,-,-,USER32.dll
+IsMenu,-,-,USER32.dll
+EnumDisplaySettingsA,-,-,USER32.dll
+DrawAnimatedRects,-,-,USER32.dll
+FrameRect,-,-,USER32.dll
+SetMenuDefaultItem,-,-,USER32.dll
+GrayStringW,-,-,USER32.dll
+CreateDialogIndirectParamW,-,-,USER32.dll
+ClientToScreen,-,-,USER32.dll
+GetParent,-,-,USER32.dll
+TranslateMDISysAccel,-,-,USER32.dll
+ShowCaret,-,-,USER32.dll
+TrackPopupMenu,-,-,USER32.dll
+IntersectRect,-,-,USER32.dll
+DialogBoxIndirectParamA,-,-,USER32.dll
+GetClassNameA,-,-,USER32.dll
+GetCaretPos,-,-,USER32.dll
+CharLowerW,-,-,USER32.dll
+wvsprintfA,-,-,USER32.dll
+ModifyMenuA,-,-,USER32.dll
+SendDlgItemMessageW,-,-,USER32.dll
+SetCaretBlinkTime,-,-,USER32.dll
+LoadMenuW,-,-,USER32.dll
+GetMenuState,-,-,USER32.dll
+DrawTextExA,-,-,USER32.dll
+CreatePopupMenu,-,-,USER32.dll
+SetMenu,-,-,USER32.dll
+CharUpperBuffW,-,-,USER32.dll
+DrawStateW,-,-,USER32.dll
+LoadImageA,-,-,USER32.dll
+GetScrollPos,-,-,USER32.dll
+GetDlgItem,-,-,USER32.dll
+ValidateRgn,-,-,USER32.dll
+GetClassInfoExW,-,-,USER32.dll
+GetClassInfoW,-,-,USER32.dll
+SetCaretPos,-,-,USER32.dll
+FillRect,-,-,USER32.dll
+LoadMenuA,-,-,USER32.dll
+ModifyMenuW,-,-,USER32.dll
+InvalidateRgn,-,-,USER32.dll
+GetMenuItemID,-,-,USER32.dll
+IsIconic,-,-,USER32.dll
+OemToCharA,-,-,USER32.dll
+CharPrevA,-,-,USER32.dll
+GetWindowWord,-,-,USER32.dll
+ImmGetProperty,-,-,IMM32.dll
+ImmGetCandidateListCountA,-,-,IMM32.dll
+ImmGetCompositionStringA,-,-,IMM32.dll
+ImmSetConversionStatus,-,-,IMM32.dll
+ImmSetOpenStatus,-,-,IMM32.dll
+ImmCreateContext,-,-,IMM32.dll
+ImmGetOpenStatus,-,-,IMM32.dll
+ImmNotifyIME,-,-,IMM32.dll
+ImmInstallIMEA,-,-,IMM32.dll
+ImmGetContext,-,-,IMM32.dll
+ImmDestroyContext,-,-,IMM32.dll
+ImmSimulateHotKey,-,-,IMM32.dll
+ImmConfigureIMEA,-,-,IMM32.dll
+ImmAssociateContext,-,-,IMM32.dll
+RasDialA,-,-,RASAPI32.dll
+RasGetProjectionInfoA,-,-,RASAPI32.dll
+GetLongPathNameA,-,-,KERNEL32.dll
